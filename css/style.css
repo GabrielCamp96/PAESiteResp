@@ -1,0 +1,33 @@
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+p {
+    font-size: 14px;
+}
+
+body {
+    margin: 50px 42px;
+    background: rgb(253, 228, 204);
+
+}
+
+ul li {
+    list-style: none;
+}
+
+#linear{
+    display: inline-flex;
+}
+
+nav ul li{
+    margin: 5px;
+}
