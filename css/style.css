@@ -1,3 +1,17 @@
+/* ANIMATIONS */
+
+@keyframes size20{
+   from{transform: scale(1,1)}
+   
+   to {transform: scale(1.05,1.05);}
+
+}
+
+@keyframes hoverlink{
+    to{font-size: 1.2em;
+        position: relative;}
+}
+
 /* GLOBAL */
 
 a:link{
@@ -5,7 +19,9 @@ a:link{
 }
 
 a:hover{
-    text-decoration: underline;
+    animation-name: hoverlink;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 a:visited{
@@ -31,6 +47,13 @@ ul li {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+img:hover {
+    transform: scale(1.2,1.2);
+    animation-name: size20;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 /* ULs */
