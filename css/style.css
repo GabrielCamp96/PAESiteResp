@@ -8,13 +8,13 @@
 }
 
 @keyframes hoverlink{
-    to{font-size: 1.2em;
-        position: relative;}
+    to{transform: scale(1.5)}
 }
 
 /* GLOBAL */
 
 a:link{
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -58,9 +58,16 @@ img:hover {
 
 /* ULs */
 
-#linear{
+
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu #linear{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    white-space: nowrap;
+    width: 100%;
 }
