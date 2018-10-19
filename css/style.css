@@ -16,13 +16,14 @@
 /* GLOBAL */
 
 a {
+    text-decoration: none;
     position: relative;
     color: black;
-    text-decoration: none;
     font-weight: 1000;
 }
 
 a:hover {
+    text-decoration: none;
     color: #000;
   }
 
@@ -38,7 +39,7 @@ p {
 body {
     margin: 50px 42px;
     font-family: 'Montserrat', sans-serif;
-    background: rgb(253, 228, 204);
+    background: bisque;
 }
 
 ul li {
@@ -60,8 +61,8 @@ ul li {
 /* ULs */
 
 #logo{
-    height: 150px;
-    width: 175px;
+    height: 100px;
+    width: 125px;
 }
 
 #menu{
