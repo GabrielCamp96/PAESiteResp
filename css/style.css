@@ -36,6 +36,12 @@ p {
     text-align: justify;
 }
 
+header .container .navbar {
+    background: bisque;
+
+}
+
+
 body {
     margin: 50px 42px;
     font-family: 'Montserrat', sans-serif;
