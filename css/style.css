@@ -40,11 +40,15 @@ header .container .navbar {
     background: bisque;
 }
 
+footer {
+    background: bisque
+}
 
 body {
     margin: 50px 42px;
     font-family: 'Montserrat', sans-serif;
     background: bisque;
+    overflow-y: hidden
 }
 
 ul li {
