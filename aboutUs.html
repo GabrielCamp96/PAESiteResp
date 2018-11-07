@@ -8,9 +8,9 @@
 		<meta name="author" content="Gabriel Campanário">
 		<link rel="icon" href="img/cam-ico.ico">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">		
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
 		<title>X3 Fotografia</title>
     </head>
     <body class="h-100">
@@ -36,7 +36,7 @@
                                         <a class="nav-link" href="portfolio.html">Portfólio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contato</a>
+                                        <a class="nav-link" href="#contato" data-toggle="modal" data-target="#contatoModal">Contato</a>
                                     </li>
                                 </ul>
                             </div>
@@ -65,6 +65,45 @@
                 </div>
             </div>
         </main>
+        <div class="modal fade text-dark" id="contatoModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Entre em contato</h5>
+                  <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="messages"></div>
+                  <p>Mande sua mensagem que entraremos em contato para resolver seu problema.</p>
+                  <form id="contact-form">
+                    <div class="form-group">
+                      <div class="input-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input type="text" name="name" class="form-control" placeholder="Nome">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                        <input type="email" name="email" class="form-control" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group input-group">
+                        <span class="input-group-addon"><i class="fas fa-pencil-alt"></i></span>
+                        <textarea name="message" class="form-control" placeholder="Mensagem" rows="5"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="g-recaptcha" data-sitekey="6LfOXXkUAAAAALaQJG25UGlJay2vRLoF1bmwvPl2"></div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary btn-block sendButton">Enviar</button>
+                </div>
+              </div>
+            </div>
+        </div>
         <footer class="fixed-bottom">
             <div class="container d-flex align-items-center">
                 <p><small>&copy; Copyright 2018 - Agencia FotoShow </small></p>
